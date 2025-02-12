@@ -28,7 +28,7 @@ To run this project locally, follow these steps:
 
 1. Clone the repository:
     ```bash
-    git clone [https://github.com/your-username/personal-portfolio.git](https://github.com/Tatermater04/CSC325ClassProject.git)
+    git clone [https://github.com/Tatermater04/CSC325ClassProject.git]
     ```
 
 2. Navigate to the project directory:
