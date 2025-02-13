@@ -62,6 +62,3 @@ Here's an example of what a user persona markdown file might look like:
 
 #### Scenario:
 Emily browses the student’s portfolio, easily navigating to projects and code samples. She appreciates the clean design, which allows her to quickly assess their skills and academic background. Within minutes, she finds relevant project examples and is able to move forward with the interview process.
-
-- Participates in community discussions
-- Seeks out tutorials and resources
