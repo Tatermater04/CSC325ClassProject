@@ -57,8 +57,8 @@ Here's an example of what a user persona markdown file might look like:
 - Look for evidence of problem-solving, technical proficiency, and initiative.
 
 #### Challenges and Pain Points:
-- **Challenges**: Limited time to review portfolios.
-- **Pain Points**: Struggles with cluttered or poorly organized portfolios, making it hard to quickly find key information.
+- Limited time to review portfolios.
+- Struggles with cluttered or poorly organized portfolios, making it hard to quickly find key information.
 
 #### Scenario:
 Emily browses the student’s portfolio, easily navigating to projects and code samples. She appreciates the clean design, which allows her to quickly assess their skills and academic background. Within minutes, she finds relevant project examples and is able to move forward with the interview process.
