@@ -9,14 +9,50 @@ Welcome to the Markdown Quality Assurance (QA) guide for this repository! As a c
 
 Both tools are essential for maintaining the quality of our documentation and markdown files in this repository.
 
-## Steps to Ensure Quality Markdown
+## Tool Setup and Usage
 
 Follow these steps to ensure your markdown files meet the required standards before pushing them to the default branch.
 
-### 1. Install Vale and markdownlint-cli
+### Getting Started with **Vale**
 
-First, you need to install both tools on your local machine. You can do this easily via npm.
+1. **Rebuild the Dev Container**\
+    First, we must sync the requires `styles` directory for Vale.
+   
+    In VS Code or GitHub Codespaces, open the command palette (`Ctrl+Shift+P` or `Cmd+Shift+P` on macOS) and select:
+    - `Dev Containers: Rebuild Container` in VS Code
+    - `Codespaces: Rebuild Container` in GitHub Codespaces
 
-#### Install markdownlint-cli
-```bash
-npm install -g markdownlint-cli
+1. **Vale is Ready to Use** \
+    After the rebuild, Vale will be ready to go. To run Vale in the terminal, use the command: 
+     ```bash
+    vale .
+    ``` 
+
+1. **Configuring Alerts**\
+    Vale provides alerts with varying severity levels: suggestions, warnings, and errors (from least to most severe). To adjust the minimum alert level, open the `.vale.ini` file and set `<level>` in the following line to your desired level.
+    ```bash
+    MinAlertLevel = <level>
+    ``` 
+
+1. **Make Edits to Your Files**\
+    After running Vale, review its suggestions and make necessary edits to your markdown files.
+
+### Getting Started with **markdownlint-cli**
+
+1. **Ready to Use**\
+    markdownlint-cli is pre-installed and ready to use. To call the linter from the terminal, use the command 
+    ```bash
+    markdownlint .
+    ``` 
+
+1. **Configuring Error Codes**\
+    To chose which error codes are visible, open the `.markdownlint.yaml` file and add a line for each error you want to ignore, in the format:
+    ```bash
+    <ErrorCode>: false>
+    ```
+
+1. **Selecting Ignored Files**\
+    To choose which files markdownlint-cli should ignore, open the `.markdownlintignore` file and add the file names or directories you want to exclude, one per line.
+
+1. **Make Edits to Your Files**
+    After running markdownlint-cli, address the reported issues in your markdown files.
