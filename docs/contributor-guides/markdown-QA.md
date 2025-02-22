@@ -35,12 +35,12 @@ Follow these steps to ensure your markdown files meet the required standards bef
     ``` 
 
 1. **Make Edits to Your Files**\
-    After running Vale, review its suggestions and make necessary edits to your markdown files.
+    After running Vale, review its suggestions and make the necessary edits to your markdown files.
 
 ### Getting Started with **markdownlint-cli**
 
 1. **Ready to Use**\
-    markdownlint-cli is pre-installed and ready to use. To call the linter from the terminal, use the command 
+    markdownlint-cli is pre-installed and ready to use in the dev container. To call the linter from the terminal, use the command 
     ```bash
     markdownlint .
     ``` 
@@ -48,11 +48,11 @@ Follow these steps to ensure your markdown files meet the required standards bef
 1. **Configuring Error Codes**\
     To chose which error codes are visible, open the `.markdownlint.yaml` file and add a line for each error you want to ignore, in the format:
     ```bash
-    <ErrorCode>: false>
+    <ErrorCode>: false
     ```
 
 1. **Selecting Ignored Files**\
     To choose which files markdownlint-cli should ignore, open the `.markdownlintignore` file and add the file names or directories you want to exclude, one per line.
 
-1. **Make Edits to Your Files**
+1. **Make Edits to Your Files**\
     After running markdownlint-cli, address the reported issues in your markdown files.
