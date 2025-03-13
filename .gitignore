@@ -1,3 +1,13 @@
+# Node generated
+node_modules
+package.json
+package-lock.json
+
+
 # ignore Vale generated files
 
 styles
+
+
+# keep
+!website/package.json
