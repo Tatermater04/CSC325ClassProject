@@ -40,6 +40,7 @@ export default function Hero() {
   return (
     <Box
       id="hero"
+      data-testid="hero"
       sx={(theme) => ({
         width: '100%',
         backgroundRepeat: 'no-repeat',
