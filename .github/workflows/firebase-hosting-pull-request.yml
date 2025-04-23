@@ -13,9 +13,22 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - run: npm run build
+
+      - name: Document Validation
+        working-directory: ./website
+        run:
+
+      - name: Testing
+        working-directory: ./website
+        run:        
+
+      - name: Build
+        working-directory: ./website
+        run: npm run build
+      
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
           firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_NEXTAPPMUELLER }}
           projectId: nextappmueller
+          entryPoint: ./website
