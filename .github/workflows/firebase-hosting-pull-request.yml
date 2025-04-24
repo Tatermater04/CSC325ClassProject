@@ -18,6 +18,12 @@ jobs:
         working-directory: ./website
         run: npm install
 
+      # Installing Vale to GitHub Workflow
+      - name: Setup Vale
+        uses: errata-ai/vale-action@v2
+        with:
+          version: 'latest'
+
       - name: Document Validation
         # working directory is the devcontainer
         run: vale sync && vale .
