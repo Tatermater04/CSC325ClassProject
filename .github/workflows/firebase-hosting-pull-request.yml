@@ -14,13 +14,17 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
-      - name: Document Validation
+      - name:  Install Dependencies
         working-directory: ./website
-        run:
+        run: npm install
+
+      - name: Document Validation
+        # working directory is the devcontainer
+        run: vale sync && vale .
 
       - name: Testing
         working-directory: ./website
-        run:        
+        run: npm run test
 
       - name: Build
         working-directory: ./website
