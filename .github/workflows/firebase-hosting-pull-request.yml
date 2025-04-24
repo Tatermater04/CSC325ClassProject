@@ -20,6 +20,7 @@ jobs:
 
       # Installing Vale to GitHub Workflow
       - name: Install Vale
+        # working directory is the devcontainer
         run: npm install -g vale
 
       - name: Document Validation
