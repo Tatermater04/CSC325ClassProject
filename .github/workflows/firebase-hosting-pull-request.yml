@@ -20,10 +20,7 @@ jobs:
 
       # Installing Vale to GitHub Workflow
       - name: Install Vale
-        run: |
-          curl -fsSL https://github.com/errata-ai/vale/releases/latest/download/vale-linux-amd64.tar.gz -o vale.tar.gz
-          tar -xzf vale.tar.gz
-          sudo mv vale /usr/local/bin/
+        run: npm install -g vale
 
       - name: Document Validation
         # working directory is the devcontainer
